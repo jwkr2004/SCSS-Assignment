@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+body {
+  font-family: "Gotu";
+}
+
+h1 {
+  color: #065f95;
+}
+
+#container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.nav {
+  font-size: 16px;
+  outline: 2px #065f95 solid;
+  display: flex;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+@media (max-width: 650px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+}
+.nav li {
+  outline: 2px #065f95 solid;
+  display: flex;
+  width: 100%;
+  padding: 1%;
+  background-color: lightskyblue;
+  color: #065f95;
+}
+.nav li a {
+  margin: auto;
+  color: #065f95;
+  text-decoration: none;
+}
+.nav li:hover {
+  font-weight: bold;
+  background-color: #065f95;
+  transition: all 1s;
+}
+.nav li:hover a {
+  color: lightskyblue;
+}/*# sourceMappingURL=style.css.map */

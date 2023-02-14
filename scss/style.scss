@@ -1,0 +1,53 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+$fontstack: 'Gotu';
+$fontsize: 16px;
+$primary: lightskyblue;
+$primary_dark: darken($primary, 45%);
+
+body {
+    font-family: $fontstack;
+}
+
+h1 {
+    color: $primary_dark;
+}
+
+#container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.nav {
+    font-size: $fontsize;
+    outline: 2px $primary_dark solid;
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0;
+    @media (max-width: 650px) {
+        flex-wrap: wrap;
+    }
+    li {
+        outline: 2px $primary_dark solid;
+        display: flex;
+        width: 100%;
+        padding: 1%;
+        background-color: $primary;
+        color: $primary_dark;
+        a {
+            margin: auto;
+            color: $primary_dark;
+            text-decoration: none;
+        }
+        &:hover {
+            font-weight: bold;
+            background-color: $primary_dark;
+            a {
+                color: $primary;
+            }
+            transition: all 1s;
+        }
+    }
+    
+    
+}
